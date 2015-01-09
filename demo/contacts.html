@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Time Machine</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- Custom CSS -->
+<link href="fontello-6daeaa21/css/fontello.css" rel="stylesheet" type="text/css"/ >
+<link type="text/css" rel="stylesheet" href="css/ttm_styles.css"/ >
+<style type="text/css">
+.contact {
+background-color: #416c80;	
+}
+    .contact .time {
+	float: right;
+	margin-right: 20px;
+	color: #416c80;
+	font-size: 0.7em;
+	margin-top: 30px;
+    } 
+
+    .contact .last {
+        margin-right: 20px;
+        color: #416c80;
+        font-size: 0.7em;
+        margin-top: 5px;
+    }
+	.contact .contactbar .alerts {
+	height: 20px;
+	right: 0px;
+	margin-right: 20px;
+	}
+
+	.contact .contactbar .alert {
+	width: 10px;
+	height: 10px;
+	float: left;
+	border-radius: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 5px;
+	position: absolute;
+	right: 10px;
+	}
+	.contact .alerts .calendar {
+	float: left;
+	position: absolute;
+	right: 40px;
+	}
+	.contact .userimage {
+    width: 40px;
+    height: 40px; 
+}
+
+.contact .contactbar {
+	height: 40px;
+}
+</style>
+
+</head>
+<body>
+<!-- Message Contact -->
+<section class="contact" id="contact">
+    <header>
+        <input type="search" class="search" placeholder="Search" />
+    </header>
+    <article>
+        <div id="tempcontact"></div>             
+    </article>
+    <footer>
+	<nav>
+        <div class="nav-icons">
+            <a href="settings.html" class="settings"><i class='icon-settings'></i></a>
+            <a href="group.html" class="group"><i class='icon-group'></i></a>
+            <a href="calendar.html" class="calendar"><i class='icon-calendar'></i></a>
+            <a href="contacts.html" class="contact active"><i class='icon-contact'></i></a>
+            <a href="messaging.html" class="messages"><i class='icon-messages'></i></a>
+        </div>
+	</nav>
+	</footer>
+</section> 
+<!-- JQuery JS -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/ttm.js"></script>
+<!-- Mustache.js Tempate JS -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+
+<!-- Contact Script Temp. -->
+<script type="text/javascript">
+    $(function() {
+        $.getJSON('data.json', function(data) {
+            var template = $('#contacttemp').html();
+            var html = Mustache.to_html(template, data);
+            $('#tempcontact').html(html);
+        });
+    }); 
+</script>
+
+<script id="contacttemp" type="text/template">
+    {{#contacts}}
+		<div class="contactbar">
+			<div class="userimage {{userimage}}"></div>
+			<div class="contacttext">
+				<div class="name">{{name}}</div>
+				<div class="last">Last: {{date}}</div>  
+			</div>
+			<div class="time">{{time}}</div>
+			<div class="alerts">
+				<div class="calendar"><i class="{{icon-calendar}}"></i></div>
+				<div class="alert {{bggreen}}"></div>
+			</div>
+		</div>
+    {{/contacts}}
+</script>
+
+
+</body>
+</html>

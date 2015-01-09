@@ -1,0 +1,233 @@
+{ "contacts" : [
+	{
+		"name" : "David Ross",
+		"shortname" : "david_ross",
+		"message" : "This is awesome!",
+		"time" : "11:13AM",
+		"date" : "12/30/13",
+		"bggreen" : "bggreen",
+		"icon-calendar"	: "",
+		"userimage" : "userimage1"
+	},
+	{
+		"name" : "Chris Lodalini",
+		"shortname" : "chris_lodalini",
+		"message" : "Whats up man?",
+		"time" : "9:47AM",
+		"date" : "12/30/13",
+		"bggreen" : "bggreen",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage2"
+	},
+	{
+		"name" : "Jen Valinteno",
+		"shortname" : "jen_valinteno",
+		"message" : "I miss you. When are com...",
+		"time" : "10:43PM",
+		"date" : "12/30/13",
+		"bggreen" : "bggreen",
+		"userimage" : "userimage3"	
+	},
+	{
+		"name" : "Chritine Taylor",
+		"shortname" : "chritine_taylor",
+		"message" : "What time are going to be...",
+		"time" : "5:15PM",
+		"date" : "12/30/13",
+		"bggreen" : "bggreen",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage4"
+	},
+	{
+		"name" : "Mark Johnson",
+		"shortname" : "mark_johnson",
+		"message" : "I'm headed down",
+		"time" : "10:04PM",
+		"date" : "12/30/13",
+		"userimage" : "userimage5"	
+	},
+	{
+		"name" : "Jen Clark",
+		"shortname" : "jen_clark",
+		"message" : "Did you get my last messag...",
+		"time" : "5:13AM",
+		"date" : "12/30/13",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage6"	
+	},
+	{
+		"name" : "Dana Smith",
+		"shortname" : "dana_smith",
+		"message" : "Don't forget to wash your...",
+		"time" : "11:13AM",
+		"date" : "12/30/13",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage7"	
+	},
+	{
+		"name" : "Janice Walberg",
+		"shortname" : "janice_walberg",
+		"message" : "Your move",
+		"time" : "10:46PM",
+		"date" : "12/30/13",
+		"userimage" : "userimage8"	
+	},
+	{
+		"name" : "Darrel McCloud",
+		"shortname" : "darrel_mccloud",
+		"message" : "Check out the new space rocks",
+		"time" : "8:19AM",
+		"date" : "12/30/13",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage9"
+	},
+	{
+		"name" : "Mollie Curts",
+		"shortname" : "mollie_curts",
+		"message" : "See you soon",
+		"time" : "11:45PM",
+		"date" : "12/30/13",
+		"userimage" : "userimage10"	
+	},
+	{
+		"name" : "David Ross",
+		"shortname" : "david_ross",
+		"message" : "This is awesome!",
+		"time" : "11:13AM",
+		"date" : "12/30/13",
+		"bggreen" : "bggreen",
+		"icon-calendar"	: "",
+		"userimage" : "userimage1"
+	},
+	{
+		"name" : "Chris Lodalini",
+		"shortname" : "chris_lodalini",
+		"message" : "Whats up man?",
+		"time" : "9:47AM",
+		"date" : "12/30/13",
+		"bggreen" : "bggreen",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage2"
+	},
+	{
+		"name" : "Jen Valinteno",
+		"shortname" : "jen_valinteno",
+		"message" : "I miss you. When are com...",
+		"time" : "10:43PM",
+		"date" : "12/30/13",
+		"bggreen" : "bggreen",
+		"userimage" : "userimage3"	
+	},
+	{
+		"name" : "Chritine Taylor",
+		"shortname" : "chritine_taylor",
+		"message" : "What time are going to be...",
+		"time" : "5:15PM",
+		"date" : "12/30/13",
+		"bggreen" : "bggreen",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage4"
+	},
+	{
+		"name" : "Mark Johnson",
+		"shortname" : "mark_johnson",
+		"message" : "I'm headed down",
+		"time" : "10:04PM",
+		"date" : "12/30/13",
+		"userimage" : "userimage5"	
+	},
+	{
+		"name" : "Jen Clark",
+		"shortname" : "jen_clark",
+		"message" : "Did you get my last messag...",
+		"time" : "5:13AM",
+		"date" : "12/30/13",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage6"	
+	},
+	{
+		"name" : "Dana Smith",
+		"shortname" : "dana_smith",
+		"message" : "Don't forget to wash your...",
+		"time" : "11:13AM",
+		"date" : "12/30/13",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage7"	
+	},
+	{
+		"name" : "Janice Walberg",
+		"shortname" : "janice_walberg",
+		"message" : "Your move",
+		"time" : "10:46PM",
+		"date" : "12/30/13",
+		"userimage" : "userimage8"	
+	},
+	{
+		"name" : "Darrel McCloud",
+		"shortname" : "darrel_mccloud",
+		"message" : "Check out the new space rocks",
+		"time" : "8:19AM",
+		"date" : "12/30/13",
+		"icon-calendar"	: "icon-calendar",
+		"userimage" : "userimage9"
+	},
+	{
+		"name" : "Mollie Curts",
+		"shortname" : "mollie_curts",
+		"message" : "See you soon",
+		"time" : "11:45PM",
+		"date" : "12/30/13",
+		"userimage" : "userimage10"	
+	}
+],
+
+"message" : [
+	{
+		"who" : "me",
+		"date" : "11/12",
+		"time" : "11:15AM",
+		"text" : "Scenester direct trade meh bespoke, chambray stumptown normcore gluten-free next level disrupt whatever."
+	},
+	{
+		"who" : "you",
+		"date" : "11/12",
+		"time" : "11:15AM",
+		"text" : "Chillwave semiotics sartorial umami mlkshk ennui polaroid before they sold out, Portland ethical."
+	},
+	{
+		"who" : "me",
+		"date" : "11/12",
+		"time" : "11:15AM",
+		"text" : "Viral Schlitz keffiyeh, skateboard crucifix mustache trust fund flannel keytar authentic. Tattooed Shoreditch deep v retro, put a bird on it single-origin coffee viral Thundercats forage occupy McSweeney's Banksy cliche meggings."
+	},
+	{
+		"who" : "you",
+		"date" : "11/12",
+		"time" : "11:15AM",
+		"text" : "Ugh selvage taxidermy street art. Pork belly artisan authentic next level vinyl, Pitchfork American Apparel selfies. Squid lumbersexual biodiesel beard."
+	},
+	{
+		"who" : "me",
+		"date" : "11/12",
+		"time" : "11:15AM",
+		"text" : "Scenester direct trade meh bespoke, chambray stumptown normcore gluten-free next level disrupt whatever."
+	},
+	{
+		"who" : "you",
+		"date" : "11/12",
+		"time" : "11:15AM",
+		"text" : "Scenester direct trade meh bespoke, chambray stumptown normcore gluten-free next level disrupt whatever."
+	},
+	{
+		"who" : "me",
+		"date" : "11/12",
+		"time" : "11:15AM",
+		"text" : "Scenester direct trade meh bespoke, chambray stumptown normcore gluten-free next level disrupt whatever."
+	},
+	{
+		"who" : "you",
+		"date" : "11/12",
+		"time" : "11:15AM",
+		"text" : "Scenester direct trade meh bespoke, chambray stumptown normcore gluten-free next level disrupt whatever."
+	}	
+]}

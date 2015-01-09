@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.1em; 
+}
+
+.bggreen {
+    background-color: #18A900; 
+}
+
+.nav-icons a.active {
+	width: 20%;
+    display: block;
+    float: left;
+    text-align: center;
+    color: #f0faff;
+}
+
+header {
+    width: 100%;
+    background-color: #416c80; 
+}
+/* Navigation Rules */
+nav {
+  width: 100%;
+  background-color: #416c80;
+  position: fixed;
+  bottom: 0px; 
+}
+
+.nav-icons a {
+    color: #ffc580;
+    font-size: 36px;
+    position: relative;
+    top: 10px;
+  	margin-bottom: 20px; 
+}
+
+.nav-icons .contact {
+    width: 20%;
+    display: block;
+    float: left;
+    text-align: center; 
+}
+
+.nav-icons .messages {
+    width: 20%;
+    display: block;
+    float: left;
+    text-align: center; 
+}
+
+.nav-icons .calendar {
+    width: 20%;
+    display: block;
+    float: left;
+    text-align: center; 
+}
+
+.nav-icons .group {
+    width: 20%;
+    display: block;
+    float: left;
+    text-align: center; 
+}
+
+.nav-icons .settings {
+    width: 20%;
+    display: block;
+    float: left;
+    text-align: center; 
+}
+/* Contact General Rules */
+.search {
+  border: 1px solid #ffc580;
+  border-radius: 15px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #F0FAFF;
+  text-align: center; 
+}
+
+.contactbar {
+  background-color: #F0FAFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 50px;
+  margin-top: 1px;
+  letter-spacing: 0.1em;
+  font-weight: lighter; 
+}
+
+.contactbar a {
+    color: #000000; 
+}
+
+.contactbar a:visited  {
+    color: #000000; 
+}
+
+.userimage {
+    background-color: #C8C8C8;
+    width: 50px;
+    height: 50px;
+    border-radius: 43px;
+    margin: 0px 10px 0px 10px;
+    background-size: 100% auto;
+    float: left; 
+}
+
+.userimage1 {
+  background-image: url(../img/user1.png); 
+}
+
+.userimage2 {
+  background-image: url(../img/user2.png); 
+}
+
+.userimage3 {
+  background-image: url(../img/user3.png); 
+}
+
+.userimage4 {
+  background-image: url(../img/user4.png); 
+}
+
+.userimage5 {
+  background-image: url(../img/user5.png); 
+}
+
+.userimage6 {
+  background-image: url(../img/user6.png); 
+}
+
+.userimage7 {
+  background-image: url(../img/user7.png); 
+}
+
+.userimage8 {
+  background-image: url(../img/user8.png); 
+}
+
+.userimage9 {
+  background-image: url(../img/user9.png); 
+}
+
+.userimage10 {
+  background-image: url(../img/user10.png); 
+}
+
+.contactbar .contacttext {
+    float: left; 
+}
+
+.contactbar .contacttext .name {
+	font-size: 20px;
+}
+
+.contactbar .contacttext .message {
+    font-size: 0.7em; 
+}
+/* Message Contact Rules */
+
+.message-contact {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #416c80;
+    width: 100%;
+    height: 100%;
+    display: block; 
+}
+
+.message-contact .context a {
+  color: #000000; 
+}
+
+.message-contact .contactbar .time {
+  float: right;
+  margin-right: 20px;
+  color: #416c80;
+  font-size: 0.7em;
+  margin-top: 5px; 
+}
+
+.message-contact .contactbar .alerts {
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  margin-right: 20px;
+  margin-top: 20px; 
+}
+
+.message-contact .contactbar .alert {
+    width: 10px;
+  height: 10px;
+  float: left;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+    margin-top: 10px; 
+}
+
+/* Message Contact Rules */
+.messaging a {
+  color: #ffc580; 
+}
+
+.messaging header {
+  position: fixed;
+  top: 0px; 
+}
+
+.messaging .back {
+  font-size: 30px;
+  float: left;
+  margin-top: 5px;
+  height: 35px;
+  width: 40px; 
+}
+
+.messaging .messagecontact {
+  color: #ffc580;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  text-indent: -40px;
+  padding-top: 10px;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  font-size: 1.3em; 
+}
+
+.messaging .calendar {
+  float: left;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  font-size: 30px; 
+}
+
+.messaging .camera {
+  display: block;
+  float: left;
+  font-size: 30px;
+  margin-top: 10px;
+  width: 15%;
+  text-align: center; 
+}
+
+.messaging .ttm {
+  display: block;
+  float: left;
+  font-size: 30px;
+  margin-top: 10px;
+  width: 15%;
+  text-align: center; 
+} 
+
+.messaging .messageinput {
+  height: 40px;
+  margin-top: 10px;
+  float: left;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 10px; 
+}
+
+.messaging .messageinput .text {
+  height: 24px;
+  width: 94%;
+  border: 1px solid #ffc580;
+  border-radius: 20px;
+  margin-top: 6px;
+  background-color: #F0FAFF; 
+}
+  
+.messaging .textcontent a {
+  color: #ffc580;
+  text-decoration:none; 
+} 
+
+.messaging .ttmpicker {
+  margin-top: 60px;
+  height: 60px; 
+} 
+
+.messaging .messagecontact {
+  color: #ffc580;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  text-indent: -40px;
+  padding-top: 10px;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+
+.messaging .me {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #ffc580;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.messaging .you {
+  margin: 30px;
+}
+
+.messaging .textcontent {
+  line-height: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  background-color: #f0faff;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  color: #213640;
+}
+
+.messaging .datetime {
+  color: #66787f;
+  font-size: 0.7em;
+  width: 100%;
+}
+
+.messaging .datetime .date {
+  float: left;  
+}
+
+.messaging .datetime .time {
+  width: 100%;
+  text-align: right;
+}
+
+.messaging .datetimes{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #416c80;
+  border-color: #416c80; 
+}
+
+.messaging .dt{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+}

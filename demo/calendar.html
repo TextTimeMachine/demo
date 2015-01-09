@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Time Machine</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- Custom CSS -->
+<link href="fontello-6daeaa21/css/fontello.css" rel="stylesheet" type="text/css"/ >
+<link type="text/css" rel="stylesheet" href="css/ttm_styles.css"/ >
+<style type="text/css">
+
+</style>
+
+</head>
+<body>
+<!-- Message Contact -->
+<section class="" id="">
+    <header>
+        <h1>Calendar</h1>
+    </header>
+    <article>
+        	         
+    </article>
+    <footer>
+	<nav>
+        <div class="nav-icons">
+            <a href="settings.html" class="settings"><i class='icon-settings'></i></a>
+            <a href="group.html" class="group"><i class='icon-group'></i></a>
+            <a href="calendar.html" class="calendar active"><i class='icon-calendar'></i></a>
+            <a href="contacts.html" class="contact"><i class='icon-contact'></i></a>
+            <a href="messaging.html" class="messages"><i class='icon-messages'></i></a>
+        </div>
+	</nav>
+	</footer>
+</section> 
+<!-- JQuery JS -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/ttm.js"></script>
+<!-- Mustache.js Tempate JS -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+
+<!-- Contact Script Temp. -->
+<script type="text/javascript">
+    $(function() {
+        $.getJSON('data.json', function(data) {
+            var template = $('#contacttemp').html();
+            var html = Mustache.to_html(template, data);
+            $('#tempcontact').html(html);
+        });
+    }); 
+</script>
+
+<script id="contacttemp" type="text/template">
+    {{#contacts}}
+		<div class="contactbar">
+			<div class="userimage {{userimage}}"></div>
+			<div class="contacttext">
+				<div class="name">{{name}}</div>
+				<div class="last">Last: {{date}}</div>  
+			</div>
+			<div class="time">{{time}}</div>
+			<div class="alerts">
+				<div class="calendar"><i class="{{icon-calendar}}"></i></div>
+				<div class="alert {{bggreen}}"></div>
+			</div>
+		</div>
+    {{/contacts}}
+</script>
+</body>
+</html>

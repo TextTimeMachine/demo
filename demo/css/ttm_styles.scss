@@ -1,0 +1,244 @@
+/* Scss Document */
+$base: #80d7ff;
+$base-dark: #416c80;
+$base-light: #F0FAFF;
+$base-comp: #ffc580;
+
+body{
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.1em;
+}	
+header {
+	width: 100%;
+	background-color: $base-dark;
+	top: 0px;
+}
+.search {
+	border: 1px solid $base-comp;
+	border-radius: 20px;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: $base-light;
+	text-align: center;
+}
+.message-contact {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: $base-dark;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+/* Nav */
+nav   {
+	width: 100%;
+	height: 60px;
+	background-color: $base-dark;
+	position: fixed;
+	bottom: 0px;
+}
+.nav-icons a {
+	color: $base-comp;
+	font-size: 36px;
+	position: relative;
+	top: 10px;
+}
+.nav-icons .contact {
+	width: 20%;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.nav-icons .messages {
+	width: 20%;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.nav-icons .calendar {
+	width: 20%;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.nav-icons .group {
+	width: 20%;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.nav-icons .settings {
+	width: 20%;
+	display: block;
+	float:left;
+	text-align: center;
+}
+/* Contacts*/
+.userimage1 {
+  background-image: url(../img/user1.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+  
+.userimage2 {
+  background-image: url(../img/user2.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+  
+.userimage3 {
+  background-image: url(../img/user3.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+  
+.userimage4 {
+  background-image: url(../img/user4.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+
+.userimage5 {
+  background-image: url(../img/user5.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+  
+ .userimage6 {
+  background-image: url(../img/user6.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+  
+ .userimage7 {
+  background-image: url(../img/user7.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+  
+  .userimage8 {
+  background-image: url(../img/user8.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+  
+  .userimage9 {
+  background-image: url(../img/user9.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+  
+  .userimage10 {
+  background-image: url(../img/user10.png);
+  background-color: #C8C8C8;
+  width: 50px;
+  height: 50px;
+  border-radius: 43px;
+  margin: 0px 10px 0px 10px;
+  background-size: 100% auto;
+  float: left; }
+   
+.contactbar {
+	background-color: $base-light;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 50px;
+	margin-top: 1px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.1em;
+	font-weight: lighter;
+}
+.contactbar a {
+	color: #000000;
+}
+.contactbar .contacttext {
+	float: left;
+}
+.contactbar .alerts {
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	margin-right: 10px;
+}
+.contactbar .alert {
+	width: 10px;
+	height: 10px;
+	/* [disabled]background-color: #00CC05; */
+	float: left;
+	border-radius: 38px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.contactbar .calendar {
+	width: 30px;
+	height: 30px;
+	float: left;
+	font-size: 26px;
+	margin-top: 1px;
+	margin-right: 4px;
+}
+.contactbar .name {
+	font-size: 1.1em;
+}
+.contactbar .message {
+	font-size: 0.7em;
+}
+.contactbar .time {
+	float: right;
+	margin-top: 36px;
+	margin-right: 20px;
+	color: #416c80;
+	font-size: 0.7em;
+}
+
+#contacttemp {
+}
+.bggreen {
+	background-color: #18A900;
+}
+/* messaging */
+

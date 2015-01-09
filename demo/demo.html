@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Time Machine</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- Custom CSS -->
+<link href="fontello-6daeaa21/css/fontello.css" rel="stylesheet" type="text/css"/ >
+<link type="text/css" rel="stylesheet" href="css/ttm_styles.css"/ >
+<style type="text/css">
+/* CSS Goes Here */	
+.login {
+	background-color: #f0faff;
+	text-align: center;
+	padding-top: 20px;
+	min-height: 600px;
+	background-image: url(img/intro_bg.jpg);
+	background-size: 100% auto;
+}
+.login .logo  {
+	margin-left: auto;
+	margin-right: auto;
+	width: 140px;
+	height: 140px;
+	background-image: url(img/logo.png);
+	background-size: 100% auto;
+}
+.login article  {
+	font-size: 9px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+.login article .text {
+	height: 26px;
+	border-radius: 40px;
+	min-width: 180px;
+	border-color: #ffc580;
+	border-width: 1px;
+	text-align: center;
+}
+.login article .phone {
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+.login footer {
+	position:fixed;
+	bottom:0px;
+	width:100%;
+}
+.login footer a {
+	font-size: 1.2em;
+	text-decoration: none;
+	width:100%;
+	color:#000000;
+}
+.login footer a .button {
+	text-align: center;
+	height: 40px;
+	background-color: #ffc580;
+	padding-top: 20px;
+}
+</style>
+</head>     
+<body>
+<!-- HTML Goes Here -->
+<section class="login" id="login-number">
+    <div class="logo"></div>
+    <article>
+    	<div class="phone">
+        	<i class="icon-phone"></i>
+        </div>
+      	<input type="number" class="text" placeholder="+1 XXX-XXX-XXXX"/>
+    </article>
+    <footer>
+    <a href="#" id="pinbutton"><div class="button">Enter</div></a>
+    </footer>
+</section>
+
+<section class="login" id="login-pin">
+    <div class="logo"></div>
+    <article>
+    	<div class="phone">#
+        </div>
+      	<input type="number" class="text" placeholder="XXXX"/>
+    </article>
+    <footer>
+    <a href="messaging.html"><div class="button">Enter</div></a>
+    </footer>
+</section>
+<!-- JQuery JS -->
+<script src="js/jquery-1.11.1.min.js"></script>
+   
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('#login-pin').css("display", "none");
+	
+	$('#pinbutton').on('click',function(event) {
+	 	$('#login-number').css("display", "none");
+	 	$('#login-pin').css("display", "block");
+	});
+});
+</script>
+</body>
+</html>
