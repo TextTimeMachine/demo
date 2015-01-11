@@ -9,50 +9,58 @@
 <link href="fontello-6daeaa21/css/fontello.css" rel="stylesheet" type="text/css"/ >
 <link type="text/css" rel="stylesheet" href="css/ttm_styles.css"/ >
 
-
+<style type="text/css">
+.demo_searchwrap   {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
 </head>
 <body>
 <!-- Message Contact -->
-<section class="message-contact" id="message-contact">
+<section class="demo_message-contact" id="demo_message-contact">
     <header>
-        <input type="search" class="search" placeholder="Search" />
+    <div class="demo_searchwrap">
+        <input type="text" class="demo_search" placeholder="Search" />
+    </div>
     </header>
     <article>
     <!-- Contact Template -->
-    	<div class="context" id="contact"></div>                
+    	<div class="demo_context" id="demo_contact"></div>                
     </article>
     <footer>
 	<nav>
-        <div class="nav-icons">
-        	<a href="settings.html" class="settings"><i class='icon-settings'></i></a>
-            <a href="group.html" class="group"><i class='icon-group'></i></a>
-            <a href="calendar.html" class="calendar"><i class='icon-calendar'></i></a>
-            <a href="contacts.html" class="contact"><i class='icon-contact'></i></a>
-            <a href="messaging.html" class="messages active"><i class='icon-messages'></i></a>
+        <div class="demo_nav-icons">
+        	<a href="settings.html" class="demo_settings"><i class='icon-settings'></i></a>
+            <a href="group.html" class="demo_group"><i class='icon-group'></i></a>
+            <a href="calendar.html" class="demo_calendar"><i class='icon-calendar'></i></a>
+            <a href="contacts.html" class="demo_contact"><i class='icon-contact'></i></a>
+            <a href="messaging.html" class="demo_messages demo_active"><i class='icon-messages'></i></a>
         </div>
 	</nav>
 	</footer>
 </section> 
 
 <!-- Message Contact -->
-<section class="messaging" id="messaging">
+<section class="demo_messaging" id="demo_messaging">
     <header>
-        <a href="#message-contact" class="back" id="back"><i class="icon-back"></i></a>
-        <div class="messagecontact">David Ross</div>
-        <a href="../calendar.html" class="calendar"><i class="icon-calendar"></i></a>
+        <a href="#demo_message-contact" class="demo_back" id="demo_back"><i class="icon-back"></i></a>
+        <div class="demo_messagecontact">David Ross</div>
+        <a href="../calendar.html" class="demo_calendar"><i class="icon-calendar"></i></a>
     </header>
-    <article class="textcontent">
-    	<div id="message"></div>
+    <article class="demo_textcontent">
+    	<div id="demo_message"></div>
     </article>
     <footer>
 		<nav>
-	    	<div class="camera"><a href="#"><i class="icon-camera"></i></a></div>
-	    	<div class="messageinput"><input type="text" class="text" /></div>
-	    	<div class="ttm"><a href="#" id="ttm"><i class="icon-ttm"></i></a></div>
-	    	<div class="ttmpicker" id="ttmpicker">
-	    		<div class="dtleft"></div>
-				<div class="dt"><input type="datetime-local" name="bdaytime" class="datetimes" placeholder="Today Now"></div>
-				<div class="dtright"></div>
+	    	<div class="demo_camera"><a href="#"><i class="icon-camera"></i></a></div>
+	    	<div class="demo_messageinput"><input type="text" class="demo_text" /></div>
+	    	<div class="demo_ttm"><a href="#" id="demo_ttm"><i class="icon-ttm"></i></a></div>
+	    	<div class="demo_ttmpicker" id="demo_ttmpicker">
+	    		<div class="demo_dtleft"></div>
+				<div class="demo_dt"><input type="datetime-local" name="bdaytime" class="demo_datetimes" placeholder="Today Now"></div>
+				<div class="demo_dtright"></div>
 	    	</div>
 		</nav>
 	</footer>
@@ -67,9 +75,9 @@
 <script type="text/javascript">
     $(function() {
         $.getJSON('data.json', function(data) {
-            var template = $('#contacttemp').html();
+            var template = $('#demo_contacttemp').html();
             var html = Mustache.to_html(template, data);
-            $('#contact').html(html);
+            $('#demo_contact').html(html);
         });
     }); 
 </script>
@@ -77,37 +85,37 @@
 <script type="text/javascript">
     $(function() {
         $.getJSON('data.json', function(data) {
-            var template = $('#messagetemp').html();
+            var template = $('#demo_messagetemp').html();
             var html = Mustache.to_html(template, data);
-            $('#message').html(html);
+            $('#demo_message').html(html);
         });
     }); 
 </script>
 <!-- Message Contact Template -->
-<script id="contacttemp" type="text/template">
+<script id="demo_contacttemp" type="text/template">
     {{#contacts}}
-	<a href="#message">
-    	<div class="contactbar">
-			<div class="userimage {{userimage}}"></div>
-			<div class="contacttext">
-				<div class="name">{{name}}</div>
-				<div class="message">{{message}}</div>	
+	<a href="#demo_message">
+    	<div class="demo_contactbar">
+			<div class="demo_userimage demo_{{userimage}}"></div>
+			<div class="demo_contacttext">
+				<div class="demo_name">{{name}}</div>
+				<div class="demo_message">{{message}}</div>	
 			</div>
-            <div class="time">{{time}}</div>
-			<div class="alerts">
-				<div class="alert {{bggreen}}"></div>
+            <div class="demo_time">{{time}}</div>
+			<div class="demo_alerts">
+				<div class="demo_alert demo_{{bggreen}}"></div>
 			</div>
 		</div>
 	</a>      
     {{/contacts}}
 </script>
 <!-- Message Template -->
-<script id="messagetemp" type="text/template">
+<script id="demo_messagetemp" type="text/template">
 	{{#message}}
-		<div class="{{who}}">
-			<div class="datetime">
-				<div class="date">{{date}}</div>
-		    	<div class="time">{{time}}</div>
+		<div class="demo_{{who}}">
+			<div class="demo_datetime">
+				<div class="demo_date">{{date}}</div>
+		    	<div class="demo_time">{{time}}</div>
 		    </div>{{text}}
 		</div>
 	{{/message}}
@@ -115,38 +123,38 @@
 <!-- Date Time Picker and Display -->    
 <script type="text/javascript">
 $(document).ready(function(){
-	$('#ttmpicker').css("display", "none");
+	$('#demo_ttmpicker').css("display", "none");
 		
-	$('#ttm').on('click',function(event) {
- 		if ($('#ttmpicker').css("display") == "none"){
-	 		$('#ttmpicker').css("display", "block");
+	$('#demo_ttm').on('click',function(event) {
+ 		if ($('#demo_ttmpicker').css("display") == "none"){
+	 		$('#demo_ttmpicker').css("display", "block");
 	 	}
 	 	else {
-	 		$('#ttmpicker').css("display", "none");
+	 		$('#demo_ttmpicker').css("display", "none");
 	 	}
 	});
 
-	$('#messaging').css("display", "none");
+	$('#demo_messaging').css("display", "none");
 	
-	$('#contact').on('click',function(event) {
- 		if ($('#message-contact').css("display") == "none"){
-	 		$('#message-contact').css("display", "block");
-	 		$('#messaging').css("display", "none");
+	$('#demo_contact').on('click',function(event) {
+ 		if ($('#demo_message-contact').css("display") == "none"){
+	 		$('#demo_message-contact').css("display", "block");
+	 		$('#demo_messaging').css("display", "none");
 	 	}
 	 	else {
-	 		$('#message-contact').css("display", "none");
-	 		$('#messaging').css("display", "block");
+	 		$('#demo_message-contact').css("display", "none");
+	 		$('#demo_messaging').css("display", "block");
 	 	}
 	});
 	
-	$('#back').on('click',function(event) {
- 		if ($('#message-contact').css("display") == "none"){
-	 		$('#message-contact').css("display", "block");
-	 		$('#messaging').css("display", "none");
+	$('#demo_back').on('click',function(event) {
+ 		if ($('#demo_message-contact').css("display") == "none"){
+	 		$('#demo_message-contact').css("display", "block");
+	 		$('#demo_messaging').css("display", "none");
 	 	}
 	 	else {
-	 		$('#message-contact').css("display", "none");
-	 		$('#messaging').css("display", "block");
+	 		$('#demo_message-contact').css("display", "none");
+	 		$('#demo_messaging').css("display", "block");
 	 	}
 	});
 });

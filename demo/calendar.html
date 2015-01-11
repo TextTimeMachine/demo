@@ -9,7 +9,80 @@
 <link href="fontello-6daeaa21/css/fontello.css" rel="stylesheet" type="text/css"/ >
 <link type="text/css" rel="stylesheet" href="css/ttm_styles.css"/ >
 <style type="text/css">
-
+a {
+  color: #ffc580; 
+}
+.cal_cal_icon {
+	font-size: 2em;
+}
+.back{
+	font-size: 30px;
+ 	float: left;
+ 	margin-top: 5px;
+ 	height: 35px;
+  	width: 40px;
+}
+.cal_lable {
+  color: #ffc580;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  text-indent: -40px;
+  padding-top: 10px;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  font-size: 1.3em; 
+}
+.calendar {
+  float: left;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  font-size: 30px; 
+}
+.cal_time {
+	width: 100%;
+	height: 50px;
+	background-color: #B7FF8E;
+	position: relative;
+	display: block;
+}
+.cal_date {
+	height: 100%;
+	width: 40px;
+	background-color: #FF898B;
+	display: block;
+	position: relative;
+	bottom: 1px;
+	top: 1px;
+}
+article {
+	background-color: #E8B9FF;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	bottom: 163px;
+	left: 0px;
+}
+.cal_month {
+	height: 50px;
+	width: 100%;
+	background-color: #B4B9FF;
+	position: relative;
+	bottom: 1px;
+	top: 1px;
+	display: block;
+}
+.cal_content {
+	background-color: #FDFF7A;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+	top: 1px;
+	bottom: 1px;
+	display: block;
+}
 </style>
 
 </head>
@@ -17,19 +90,25 @@
 <!-- Message Contact -->
 <section class="" id="">
     <header>
-        <h1>Calendar</h1>
+        <a href="#" class="back" id=""><i class="icon-back"></i></a>
+        <div class="cal_lable">Calendar</div>
+        <a href="" class="calendar"><i class="icon-calendar"></i></a>
     </header>
     <article>
-        	         
+        <div class="cal_time"></div>
+        <div class="cal_content"></div>
+        <div class="cal_date">a</div>
+        <div class="cal_year"></div>
+        <div class="cal_month"></div>
     </article>
     <footer>
 	<nav>
-        <div class="nav-icons">
-            <a href="settings.html" class="settings"><i class='icon-settings'></i></a>
-            <a href="group.html" class="group"><i class='icon-group'></i></a>
-            <a href="calendar.html" class="calendar active"><i class='icon-calendar'></i></a>
-            <a href="contacts.html" class="contact"><i class='icon-contact'></i></a>
-            <a href="messaging.html" class="messages"><i class='icon-messages'></i></a>
+        <div class="demo_nav-icons">
+            <a href="settings.html" class="demo_settings"><i class='icon-settings'></i></a>
+            <a href="group.html" class="demo_group"><i class='icon-group'></i></a>
+            <a href="calendar.html" class="demo_calendar demo_active"><i class='icon-calendar'></i></a>
+            <a href="contacts.html" class="demo_contact"><i class='icon-contact'></i></a>
+            <a href="messaging.html" class="demo_messages"><i class='icon-messages'></i></a>
         </div>
 	</nav>
 	</footer>
@@ -44,25 +123,25 @@
 <script type="text/javascript">
     $(function() {
         $.getJSON('data.json', function(data) {
-            var template = $('#contacttemp').html();
+            var template = $('#demo_contacttemp').html();
             var html = Mustache.to_html(template, data);
-            $('#tempcontact').html(html);
+            $('#demo_tempcontact').html(html);
         });
     }); 
 </script>
 
-<script id="contacttemp" type="text/template">
+<script id="demo_contacttemp" type="text/template">
     {{#contacts}}
-		<div class="contactbar">
-			<div class="userimage {{userimage}}"></div>
-			<div class="contacttext">
-				<div class="name">{{name}}</div>
-				<div class="last">Last: {{date}}</div>  
+		<div class="demo_contactbar">
+			<div class="demo_userimage demo_{{userimage}}"></div>
+			<div class="demo_contacttext">
+				<div class="demo_name">{{name}}</div>
+				<div class="demo_last">Last: {{date}}</div>  
 			</div>
-			<div class="time">{{time}}</div>
-			<div class="alerts">
-				<div class="calendar"><i class="{{icon-calendar}}"></i></div>
-				<div class="alert {{bggreen}}"></div>
+			<div class="demo_time">{{time}}</div>
+			<div class="demo_alerts">
+				<div class="demo_calendar"><i class="demo_{{icon-calendar}}"></i></div>
+				<div class="demo_alert demo_{{bggreen}}"></div>
 			</div>
 		</div>
     {{/contacts}}

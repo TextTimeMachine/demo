@@ -9,30 +9,29 @@
 <link href="fontello-6daeaa21/css/fontello.css" rel="stylesheet" type="text/css"/ >
 <link type="text/css" rel="stylesheet" href="css/ttm_styles.css"/ >
 <style type="text/css">
-.contact {
-background-color: #416c80;	
-}
-    .contact .time {
+	.demo_contact {
+	background-color: #416c80;	
+	}
+	.demo_contact .demo_time {
 	float: right;
 	margin-right: 20px;
 	color: #416c80;
 	font-size: 0.7em;
 	margin-top: 30px;
-    } 
-
-    .contact .last {
-        margin-right: 20px;
-        color: #416c80;
-        font-size: 0.7em;
-        margin-top: 5px;
+	} 
+	.demo_contact .demo_last {
+    margin-right: 20px;
+    color: #416c80;
+	font-size: 0.7em;
+    margin-top: 5px;
     }
-	.contact .contactbar .alerts {
+	.demo_contact .demo_contactbar .demo_alerts {
 	height: 20px;
 	right: 0px;
 	margin-right: 20px;
 	}
 
-	.contact .contactbar .alert {
+	.demo_contact .demo_contactbar .demo_alert {
 	width: 10px;
 	height: 10px;
 	float: left;
@@ -43,39 +42,42 @@ background-color: #416c80;
 	position: absolute;
 	right: 10px;
 	}
-	.contact .alerts .calendar {
+	.demo_contact .demo_alerts .demo_calendar {
 	float: left;
 	position: absolute;
 	right: 40px;
 	}
-	.contact .userimage {
+	.demo_contact .demo_userimage {
     width: 40px;
     height: 40px; 
-}
+	}
 
-.contact .contactbar {
+	.demo_contact .demo_contactbar {
 	height: 40px;
-}
+	}
+
 </style>
 
 </head>
 <body>
 <!-- Message Contact -->
-<section class="contact" id="contact">
+<section class="demo_contact" id="demo_contact">
     <header>
-        <input type="search" class="search" placeholder="Search" />
+    <div class="demo_searchwrap">
+        <input type="text" class="demo_search" placeholder="Search" />
+    </div>
     </header>
     <article>
-        <div id="tempcontact"></div>             
+        <div id="demo_tempcontact"></div>             
     </article>
     <footer>
 	<nav>
-        <div class="nav-icons">
-            <a href="settings.html" class="settings"><i class='icon-settings'></i></a>
-            <a href="group.html" class="group"><i class='icon-group'></i></a>
-            <a href="calendar.html" class="calendar"><i class='icon-calendar'></i></a>
-            <a href="contacts.html" class="contact active"><i class='icon-contact'></i></a>
-            <a href="messaging.html" class="messages"><i class='icon-messages'></i></a>
+        <div class="demo_nav-icons">
+            <a href="settings.html" class="demo_settings"><i class='icon-settings'></i></a>
+            <a href="group.html" class="demo_group"><i class='icon-group'></i></a>
+            <a href="calendar.html" class="demo_calendar"><i class='icon-calendar'></i></a>
+            <a href="contacts.html" class="demo_contact demo_active"><i class='icon-contact'></i></a>
+            <a href="messaging.html" class="demo_messages"><i class='icon-messages'></i></a>
         </div>
 	</nav>
 	</footer>
@@ -90,25 +92,25 @@ background-color: #416c80;
 <script type="text/javascript">
     $(function() {
         $.getJSON('data.json', function(data) {
-            var template = $('#contacttemp').html();
+            var template = $('#demo_contacttemp').html();
             var html = Mustache.to_html(template, data);
-            $('#tempcontact').html(html);
+            $('#demo_tempcontact').html(html);
         });
     }); 
 </script>
 
-<script id="contacttemp" type="text/template">
+<script id="demo_contacttemp" type="text/template">
     {{#contacts}}
-		<div class="contactbar">
-			<div class="userimage {{userimage}}"></div>
-			<div class="contacttext">
-				<div class="name">{{name}}</div>
-				<div class="last">Last: {{date}}</div>  
+		<div class="demo_contactbar">
+			<div class="demo_userimage demo_{{userimage}}"></div>
+			<div class="demo_contacttext">
+				<div class="demo_name">{{name}}</div>
+				<div class="demo_last">Last: {{date}}</div>  
 			</div>
-			<div class="time">{{time}}</div>
-			<div class="alerts">
-				<div class="calendar"><i class="{{icon-calendar}}"></i></div>
-				<div class="alert {{bggreen}}"></div>
+			<div class="demo_time">{{time}}</div>
+			<div class="demo_alerts">
+				<div class="demo_calendar"><i class="demo_{{icon-calendar}}"></i></div>
+				<div class="demo_alert demo_{{bggreen}}"></div>
 			</div>
 		</div>
     {{/contacts}}

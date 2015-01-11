@@ -8,8 +8,99 @@
 <!-- Custom CSS -->
 <link href="fontello-6daeaa21/css/fontello.css" rel="stylesheet" type="text/css"/ >
 <link type="text/css" rel="stylesheet" href="css/ttm_styles.css"/ >
+<link type="text/css" rel="stylesheet" href="css/font-awesome.css"/ >
 <style type="text/css">
+.demo_textlabels {
+	margin-left: 10px;
+	text-align: left;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	position: fixed;
+	left: 0px;
+	right: 210px;
+	display: block;
+	overflow: hidden;
+	text-overflow-multiline: ellipsis;
+	white-space: nowrap;	
+}
+.demo_group_name {
+	font-size: 1.4em;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	height: 30px;
+	overflow: hidden;
+	text-overflow-multiline: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+	display: inline-block;
+	margin-bottom: -3px;
+}
+.demo_last {
+	font-size: 0.8em;
+}
 
+.group_switch {
+	float: right;
+	margin-top: 7px;
+	margin-right: 0px;
+}
+.create_group {
+	color: #FFFFFF;
+	width: 20px;
+	height: 20px;
+	font-size: 2em;
+	float: right;
+	margin-top: 6px;
+}
+.group_next {
+	width: 90px;
+	float: right;
+	text-align: right;
+	margin-top: 2px;
+	margin-right: 10px;
+	display: block;
+	height: 50px;
+}
+.demo_search.group_search_cheet {
+	width: 90%;
+}
+.group_alert {
+	margin-left: 39px;
+	margin-top: 4px;
+}
+.group_last {
+	margin-top: 26px;
+}
+.switch_next_box {
+	display: block;
+	width: 200px;
+	height: 50px;
+	position: fixed;
+	right: 0px;
+}
+.ellipsis { text-overflow: ellipsis; }
+.overflow {
+  	width: 10em;
+  outline: 1px solid #000;
+  margin: 0 0 2em 0;
+	  white-space: nowrap;
+  	overflow: hidden;
+}
+.demo_slidebar {
+    background-color: #F0FAFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+    margin-top: 1px;
+    margin-left: 100%;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    text-align: left;
+    position: static;
+}
+.contact_margin {
+    margin-left: 0%;
+}
 </style>
 
 </head>
@@ -17,19 +108,47 @@
 <!-- Message Contact -->
 <section class="" id="">
     <header>
-        <h1>Group</h1>
+    <div class="demo_searchwrap">
+        <input type="text" class="demo_search group_search_cheet" placeholder="Add Group" />
+        <a href="#" class="create_group"><i class="fa fa-plus"></i></a>
+    </div>
     </header>
-    <article>
-        	         
+  <article>
+      <div class="demo_contactbar contact_margin" id="demo_slide_left">
+            <div class="demo_textlabels">
+            <div class="demo_group_name">Boot Camp</div>
+                <div class="demo_last">Last:01/04</div>  
+            </div>
+        <div class="switch_next_box">    
+        <div class="group_next">
+            	<div class="icon-calendar float_right"></div>
+                <div class="demo_alert demo_bggreen group_alert"></div>
+                <div class="demo_last group_last">Next:01/11</div>
+          </div>
+        <div class="group_switch">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo_slidebar" id="demo_slide_right">
+      Darrel
+      </div>
+
     </article>
     <footer>
 	<nav>
-        <div class="nav-icons">
-            <a href="settings.html" class="settings"><i class='icon-settings'></i></a>
-            <a href="group.html" class="group active"><i class='icon-group'></i></a>
-            <a href="calendar.html" class="calendar"><i class='icon-calendar'></i></a>
-            <a href="contacts.html" class="contact"><i class='icon-contact'></i></a>
-            <a href="messaging.html" class="messages"><i class='icon-messages'></i></a>
+        <div class="demo_nav-icons">
+            <a href="settings.html" class="demo_settings"><i class='icon-settings'></i></a>
+            <a href="group.html" class="demo_group demo_active"><i class='icon-group'></i></a>
+            <a href="calendar.html" class="demo_calendar"><i class='icon-calendar'></i></a>
+            <a href="contacts.html" class="demo_contact"><i class='icon-contact'></i></a>
+            <a href="messaging.html" class="demo_messages"><i class='icon-messages'></i></a>
         </div>
 	</nav>
 	</footer>
@@ -39,6 +158,46 @@
 <script src="js/ttm.js"></script>
 <!-- Mustache.js Tempate JS -->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+     $('#demo_slide_left').on("click",function(event){
+        event.stopPropagation();
+        var target = event.target || event.srcElement;
+
+        if(target.tagName == "DIV") {
+
+            if ($( "#demo_slide_left" ).css('margin-left') == '0%')
+             {
+                $( "#demo_slide_left" ).animate({
+                marginLeft: "-50%"
+                }, 1000, function() {
+                // nada
+                });
+                $( "#demo_slide_right" ).animate({
+                marginLeft: "50%"
+                }, 1000, function() {
+                // nada
+                });
+             }
+             else
+             {
+                $( "#demo_slide_left" ).animate({
+                marginLeft: "0%"
+                }, 1000, function() {
+                // nada
+                });
+                $( "#demo_slide_right" ).animate({
+                marginLeft: "100%"
+                }, 1000, function() {
+                // nada
+                });
+             }
+            
+        }
+    });
+});
+</script>
 
 </body>
 </html>

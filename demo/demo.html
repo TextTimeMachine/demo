@@ -9,7 +9,7 @@
 <link type="text/css" rel="stylesheet" href="css/ttm_styles.css"/ >
 <style type="text/css">
 /* CSS Goes Here */	
-.login {
+.demo_login {
 	background-color: #f0faff;
 	text-align: center;
 	padding-top: 20px;
@@ -17,7 +17,7 @@
 	background-image: url(img/intro_bg.jpg);
 	background-size: 100% auto;
 }
-.login .logo  {
+.demo_login .demo_logo  {
 	margin-left: auto;
 	margin-right: auto;
 	width: 140px;
@@ -25,13 +25,13 @@
 	background-image: url(img/logo.png);
 	background-size: 100% auto;
 }
-.login article  {
+.demo_login article  {
 	font-size: 9px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
 }
-.login article .text {
+.demo_login article .demo_text {
 	height: 26px;
 	border-radius: 40px;
 	min-width: 180px;
@@ -39,22 +39,22 @@
 	border-width: 1px;
 	text-align: center;
 }
-.login article .phone {
+.demo_login article .demo_phone {
 	font-size: 3em;
 	margin-bottom: 10px;
 }
-.login footer {
+.demo_login footer {
 	position:fixed;
 	bottom:0px;
 	width:100%;
 }
-.login footer a {
+.demo_login footer a {
 	font-size: 1.2em;
 	text-decoration: none;
 	width:100%;
 	color:#000000;
 }
-.login footer a .button {
+.demo_login footer a .demo_button {
 	text-align: center;
 	height: 40px;
 	background-color: #ffc580;
@@ -64,28 +64,28 @@
 </head>     
 <body>
 <!-- HTML Goes Here -->
-<section class="login" id="login-number">
-    <div class="logo"></div>
+<section class="demo_login" id="demo_login-number">
+    <div class="demo_logo"></div>
     <article>
-    	<div class="phone">
+    	<div class="demo_phone">
         	<i class="icon-phone"></i>
         </div>
-      	<input type="number" class="text" placeholder="+1 XXX-XXX-XXXX"/>
+      	<input type="number" class="demo_text" placeholder="+1 XXX-XXX-XXXX"/>
     </article>
     <footer>
-    <a href="#" id="pinbutton"><div class="button">Enter</div></a>
+    <a href="#" id="demo_pinbutton"><div class="demo_button">Enter</div></a>
     </footer>
 </section>
 
-<section class="login" id="login-pin">
-    <div class="logo"></div>
+<section class="demo_login" id="demo_login-pin">
+    <div class="demo_logo"></div>
     <article>
-    	<div class="phone">#
+    	<div class="demo_phone">Pin #
         </div>
-      	<input type="number" class="text" placeholder="XXXX"/>
+      	<input type="number" class="demo_text" placeholder="XXXX"/>
     </article>
     <footer>
-    <a href="messaging.html"><div class="button">Enter</div></a>
+    <a href="messaging.html"><div class="demo_button">Enter</div></a>
     </footer>
 </section>
 <!-- JQuery JS -->
@@ -94,11 +94,11 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-	$('#login-pin').css("display", "none");
+	$('#demo_login-pin').css("display", "none");
 	
-	$('#pinbutton').on('click',function(event) {
-	 	$('#login-number').css("display", "none");
-	 	$('#login-pin').css("display", "block");
+	$('#demo_pinbutton').on('click',function(event) {
+	 	$('#demo_login-number').css("display", "none");
+	 	$('#demo_login-pin').css("display", "block");
 	});
 });
 </script>

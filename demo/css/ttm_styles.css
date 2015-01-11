@@ -6,12 +6,12 @@ body {
   letter-spacing: 0.1em; 
 }
 
-.bggreen {
+.demo_bggreen {
     background-color: #18A900; 
 }
 
-.nav-icons a.active {
-	width: 20%;
+.demo_nav-icons a.demo_active {
+	  width: 20%;
     display: block;
     float: left;
     text-align: center;
@@ -30,7 +30,7 @@ nav {
   bottom: 0px; 
 }
 
-.nav-icons a {
+.demo_nav-icons a {
     color: #ffc580;
     font-size: 36px;
     position: relative;
@@ -38,73 +38,73 @@ nav {
   	margin-bottom: 20px; 
 }
 
-.nav-icons .contact {
+.demo_nav-icons .demo_contact {
     width: 20%;
     display: block;
     float: left;
     text-align: center; 
 }
 
-.nav-icons .messages {
+.demo_nav-icons .demo_messages {
     width: 20%;
     display: block;
     float: left;
     text-align: center; 
 }
 
-.nav-icons .calendar {
+.demo_nav-icons .demo_calendar {
     width: 20%;
     display: block;
     float: left;
     text-align: center; 
 }
 
-.nav-icons .group {
+.demo_nav-icons .demo_group {
     width: 20%;
     display: block;
     float: left;
     text-align: center; 
 }
 
-.nav-icons .settings {
+.demo_nav-icons .demo_settings {
     width: 20%;
     display: block;
     float: left;
     text-align: center; 
 }
 /* Contact General Rules */
-.search {
-  border: 1px solid #ffc580;
-  border-radius: 15px;
-  height: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 96%;
-  margin-left: 2%;
-  margin-right: 2%;
-  background-color: #F0FAFF;
-  text-align: center; 
+.demo_search {
+	border: 1px solid #ffc580;
+	border-radius: 15px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	background-color: #F0FAFF;
+	text-align: center;
 }
 
-.contactbar {
-  background-color: #F0FAFF;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 50px;
-  margin-top: 1px;
-  letter-spacing: 0.1em;
-  font-weight: lighter; 
+.demo_contactbar {
+	background-color: #F0FAFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 50px;
+	margin-top: 1px;
+	letter-spacing: 0.1em;
+	font-weight: lighter;
+	text-align: left;
+	position: static;
 }
 
-.contactbar a {
+.demo_contactbar a {
     color: #000000; 
 }
 
-.contactbar a:visited  {
+.demo_contactbar a:visited  {
     color: #000000; 
 }
 
-.userimage {
+.demo_userimage {
     background-color: #C8C8C8;
     width: 50px;
     height: 50px;
@@ -114,60 +114,60 @@ nav {
     float: left; 
 }
 
-.userimage1 {
+.demo_userimage1 {
   background-image: url(../img/user1.png); 
 }
 
-.userimage2 {
+.demo_userimage2 {
   background-image: url(../img/user2.png); 
 }
 
-.userimage3 {
+.demo_userimage3 {
   background-image: url(../img/user3.png); 
 }
 
-.userimage4 {
+.demo_userimage4 {
   background-image: url(../img/user4.png); 
 }
 
-.userimage5 {
+.demo_userimage5 {
   background-image: url(../img/user5.png); 
 }
 
-.userimage6 {
+.demo_userimage6 {
   background-image: url(../img/user6.png); 
 }
 
-.userimage7 {
+.demo_userimage7 {
   background-image: url(../img/user7.png); 
 }
 
-.userimage8 {
+.demo_userimage8 {
   background-image: url(../img/user8.png); 
 }
 
-.userimage9 {
+.demo_userimage9 {
   background-image: url(../img/user9.png); 
 }
 
-.userimage10 {
+.demo_userimage10 {
   background-image: url(../img/user10.png); 
 }
 
-.contactbar .contacttext {
+.demo_contactbar .demo_contacttext {
     float: left; 
 }
 
-.contactbar .contacttext .name {
+.demo_contactbar .demo_contacttext .demo_name {
 	font-size: 20px;
 }
 
-.contactbar .contacttext .message {
+.demo_contactbar .demo_contacttext .demo_message {
     font-size: 0.7em; 
 }
 /* Message Contact Rules */
 
-.message-contact {
+.demo_message-contact {
     margin-left: auto;
     margin-right: auto;
     background-color: #416c80;
@@ -176,11 +176,11 @@ nav {
     display: block; 
 }
 
-.message-contact .context a {
+.demo_message-contact .demo_context a {
   color: #000000; 
 }
 
-.message-contact .contactbar .time {
+.demo_message-contact .demo_contactbar .demo_time {
   float: right;
   margin-right: 20px;
   color: #416c80;
@@ -188,7 +188,7 @@ nav {
   margin-top: 5px; 
 }
 
-.message-contact .contactbar .alerts {
+.demo_message-contact .demo_contactbar .demo_alerts {
   height: 30px;
   position: absolute;
   right: 0px;
@@ -196,7 +196,7 @@ nav {
   margin-top: 20px; 
 }
 
-.message-contact .contactbar .alert {
+.demo_alert {
     width: 10px;
   height: 10px;
   float: left;
@@ -207,16 +207,16 @@ nav {
 }
 
 /* Message Contact Rules */
-.messaging a {
+.demo_messaging a {
   color: #ffc580; 
 }
 
-.messaging header {
+.demo_messaging header {
   position: fixed;
   top: 0px; 
 }
 
-.messaging .back {
+.demo_messaging .demo_back {
   font-size: 30px;
   float: left;
   margin-top: 5px;
@@ -224,7 +224,7 @@ nav {
   width: 40px; 
 }
 
-.messaging .messagecontact {
+.demo_messaging .demo_messagecontact {
   color: #ffc580;
   height: 40px;
   width: 100%;
@@ -236,7 +236,7 @@ nav {
   font-size: 1.3em; 
 }
 
-.messaging .calendar {
+.demo_messaging .demo_calendar {
   float: left;
   position: fixed;
   right: 5px;
@@ -244,7 +244,7 @@ nav {
   font-size: 30px; 
 }
 
-.messaging .camera {
+.demo_messaging .demo_camera {
   display: block;
   float: left;
   font-size: 30px;
@@ -253,7 +253,7 @@ nav {
   text-align: center; 
 }
 
-.messaging .ttm {
+.demo_messaging .demo_ttm {
   display: block;
   float: left;
   font-size: 30px;
@@ -262,7 +262,7 @@ nav {
   text-align: center; 
 } 
 
-.messaging .messageinput {
+.demo_messaging .demo_messageinput {
   height: 40px;
   margin-top: 10px;
   float: left;
@@ -271,7 +271,7 @@ nav {
   margin-bottom: 10px; 
 }
 
-.messaging .messageinput .text {
+.demo_messaging .demo_messageinput .demo_text {
   height: 24px;
   width: 94%;
   border: 1px solid #ffc580;
@@ -280,17 +280,17 @@ nav {
   background-color: #F0FAFF; 
 }
   
-.messaging .textcontent a {
+.demo_messaging .demo_textcontent a {
   color: #ffc580;
   text-decoration:none; 
 } 
 
-.messaging .ttmpicker {
+.demo_messaging .demo_ttmpicker {
   margin-top: 60px;
   height: 60px; 
 } 
 
-.messaging .messagecontact {
+.demo_messaging .demo_messagecontact {
   color: #ffc580;
   height: 40px;
   width: 100%;
@@ -302,7 +302,7 @@ nav {
   font-size: 1.3em;
 }
 
-.messaging .me {
+.demo_messaging .demo_me {
   margin-left: 15px;
   margin-right: 15px;
   background-color: #ffc580;
@@ -313,11 +313,11 @@ nav {
   padding-bottom: 10px;
 }
 
-.messaging .you {
+.demo_messaging .demo_you {
   margin: 30px;
 }
 
-.messaging .textcontent {
+.demo_messaging .demo_textcontent {
   line-height: 1.5em;
   font-weight: 300;
   letter-spacing: 0.05em;
@@ -327,22 +327,22 @@ nav {
   color: #213640;
 }
 
-.messaging .datetime {
+.demo_messaging .demo_datetime {
   color: #66787f;
   font-size: 0.7em;
   width: 100%;
 }
 
-.messaging .datetime .date {
+.demo_messaging .demo_datetime .demo_date {
   float: left;  
 }
 
-.messaging .datetime .time {
+.demo_messaging .demo_datetime .demo_time {
   width: 100%;
   text-align: right;
 }
 
-.messaging .datetimes{
+.demo_messaging .demo_datetimes{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -352,9 +352,89 @@ nav {
   border-color: #416c80; 
 }
 
-.messaging .dt{
+.demo_messaging .demo_dt{
   width: 300px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 40px;
+}
+.demo_settingsimage {
+	width: 140px;
+	height: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 200px;
+	background-color: #FF9395;
+	background-image: url(../img/user.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin-bottom: 20px;
+}
+.demo_settingsinfo {
+	text-align: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%
+%;
+	height: 100%;
+	margin-bottom: 100px;
+}
+input { 
+	box-sizing: border-box;
+}
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 1px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 10px;
+  color: #000000;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    border: 1px solid #999999; border-radius: 20px;
+    position: absolute; top: 0; bottom: 0; right: 56px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+.demo_searchwrap   {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.float_right {
+	float: right;
 }
